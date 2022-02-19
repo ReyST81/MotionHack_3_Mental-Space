@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mental_space/HomeScreen.dart';
-import 'Home/HomePage.dart';
+import 'package:mental_space/Page/LoginPage.dart';
 void main() {
   runApp(MyApp());
 }
@@ -20,7 +19,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Loginpage(),
     );
   }
 }

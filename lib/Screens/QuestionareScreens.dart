@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mental_space/HomeScreen.dart';
+import 'package:mental_space/Home/HomePage.dart';
+
 import 'package:mental_space/Page/ResultPage.dart';
 
 class QuestionareScreens extends StatelessWidget {
@@ -34,7 +35,7 @@ class QuestionareScreens extends StatelessWidget {
                   children: [
                     IconButton(
                       onPressed: (){
-                        Route route = MaterialPageRoute(builder: (context) => Homescreen());
+                        Route route = MaterialPageRoute(builder: (context) => HomePage());
                         Navigator.push(context, route);
                       },
                       icon: Icon(Icons.arrow_back),

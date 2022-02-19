@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mental_space/LoginPage.dart';
+import 'package:mental_space/Page/LoginPage.dart';
 import 'package:mental_space/Riwayat/RiwayatnNotifPage.dart';
 
 class Setting extends StatelessWidget {

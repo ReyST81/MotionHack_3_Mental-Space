@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mental_space/Page/SettingPage.dart';
-import 'Page/DailyJournalPage.dart';
-import 'Page/QuestionarePage.dart';
-import 'Page/PsikologPage.dart';
+
+import '../Page/DailyJournalPage.dart';
+import '../Page/PsikologPage.dart';
+import '../Page/QuestionarePage.dart';
+
 
 class Homescreen extends StatelessWidget {
   @override

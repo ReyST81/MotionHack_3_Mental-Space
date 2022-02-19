@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mental_space/Riwayat/RiwayatTransPage.dart';
-import 'package:mental_space/HomeScreen.dart';
+import 'package:mental_space/Screens/HomeScreen.dart';
 
 class Riwayat extends StatelessWidget {
 

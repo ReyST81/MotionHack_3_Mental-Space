@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mental_space/HomeScreen.dart';
-import 'package:mental_space/PesanPage.dart';
+import 'package:mental_space/Screens/HomeScreen.dart';
+import 'package:mental_space/Screens/PesanPage.dart';
 import 'package:mental_space/Riwayat/RiwayatnNotifPage.dart';
 
 class HomePage extends StatefulWidget {

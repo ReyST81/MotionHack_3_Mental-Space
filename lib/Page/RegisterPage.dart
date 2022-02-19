@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mental_space/Home/HomePage.dart';
-import 'package:mental_space/HomeScreen.dart';
-import 'package:mental_space/LoginScreen.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class RegisterPage extends StatefulWidget {

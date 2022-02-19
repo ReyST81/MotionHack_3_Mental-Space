@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mental_space/Home/HomePage.dart';
-import 'package:mental_space/HomeScreen.dart';
-import 'RegisterPage.dart';
+import '../Page/RegisterPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatelessWidget {

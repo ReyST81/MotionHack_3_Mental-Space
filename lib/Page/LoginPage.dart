@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mental_space/LoginScreen.dart';
+import 'package:mental_space/Screens/LoginScreen.dart';
 import 'RegisterPage.dart';
 
 
