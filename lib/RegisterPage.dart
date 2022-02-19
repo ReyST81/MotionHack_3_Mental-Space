@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mental_space/Home/HomePage.dart';
+import 'package:mental_space/HomeScreen.dart';
 import 'package:mental_space/LoginScreen.dart';
-import 'RegisterPage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -9,7 +11,6 @@ class RegisterPage extends StatefulWidget {
 
 class _RegisterPageState extends State<RegisterPage> {
 bool firstValue = false;
-
 bool secondValue = false;
 
   @override
@@ -46,8 +47,13 @@ bool secondValue = false;
                     ),
                     Container(
                       child: Center(
-                        child: Image.asset("assets/image/logo.png"),
-                      ),
+                        child: Text(
+                          "Log In",
+                          style: GoogleFonts.rhodiumLibre(
+                           fontSize: 60,
+                         ),
+                        ),
+                      ),                  
                     ),
                     SizedBox(height: 20,),
                     Container(
@@ -140,32 +146,11 @@ bool secondValue = false;
                     SizedBox(height: 20,),
                     Container(
                       child: Center(
-                        child: Text("or"),
-                      )
-                    ),
-                    SizedBox(height: 20,),
-                      Container(
-                        child: Center(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text("already have an account?"),
-                              TextButton(
-                                onPressed: (){
-                                  Route route = MaterialPageRoute(builder: (context) => LoginScreen());
-                                  Navigator.push(context, route);
-                                },
-                                child: Text("Log in")
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    SizedBox(height: 20,),
-                    Container(
-                      child: Center(
                         child: ElevatedButton(
-                          onPressed: (){},
+                          onPressed: (){
+                            Route route = MaterialPageRoute(builder: (context) => HomePage());
+                            Navigator.push(context, route);
+                          },
                           child: Text(
                             "Login",
                             style: TextStyle(color: Color(0xff0D1667)),

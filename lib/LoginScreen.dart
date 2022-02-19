@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mental_space/Home/HomePage.dart';
+import 'package:mental_space/HomeScreen.dart';
 import 'RegisterPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -10,6 +12,11 @@ class LoginScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(
+             image: DecorationImage(
+                fit: BoxFit.fitWidth,
+                image: AssetImage("assets/image/Bubbles.png"),
+                alignment: Alignment.topCenter,
+              ),
             gradient: LinearGradient(
               begin: const FractionalOffset(0.5, 0.3),
               end: const FractionalOffset(0.0, 1.0),
@@ -57,9 +64,9 @@ class LoginScreen extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(7),
                       decoration: BoxDecoration(
-                        color: Colors.white, // set border width
+                        color: Colors.white,  
                         borderRadius: BorderRadius.all(
-                            Radius.circular(10.0)), // set rounded corner radius
+                            Radius.circular(10.0)),  
                       ),
                       child: TextField(
                         decoration: InputDecoration(
@@ -69,7 +76,7 @@ class LoginScreen extends StatelessWidget {
                       ),  
                       ),
                     ),
-                     SizedBox(height: 10,),
+                    SizedBox(height: 10,),
                     Container(
                       margin: EdgeInsets.all(10),
                       child: Text(
@@ -80,10 +87,10 @@ class LoginScreen extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(7),
                       decoration: BoxDecoration(
-                        color: Colors.white,   // set border width
+                        color: Colors.white,  
                         borderRadius: BorderRadius.all(
                             Radius.circular(10.0)
-                        ), // set rounded corner radius
+                        ), 
                       ),
                       child: TextField(
                         decoration: InputDecoration(
@@ -101,10 +108,19 @@ class LoginScreen extends StatelessWidget {
                           height: 40,
                           margin: EdgeInsets.only(right: 250, left: 250),
                           child: ElevatedButton(
-                          onPressed: (){},
-                          child: Text(
-                            "Log In",
-                            style: TextStyle(color: Color(0xff0D1667), fontSize: 15),
+                          onPressed: (){
+                            Route route = MaterialPageRoute(builder: (context) => HomePage());
+                              Navigator.push(context, route);
+                          },
+                          child: TextButton(
+                              onPressed: (){
+                                Route route = MaterialPageRoute(builder: (context) => RegisterPage());
+                                Navigator.push(context, route);
+                              },
+                              child: Text(
+                                "Log in",
+                                style: GoogleFonts.notoSans(color: Color(0xff0D1667)),
+                                )
                             ),
                             style: ElevatedButton.styleFrom(
                               elevation: 0,

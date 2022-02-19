@@ -7,15 +7,14 @@ class Loginpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         body: SafeArea(
           child: Container( 
             decoration: BoxDecoration(
-              image: DecorationImage(
-                fit: BoxFit.cover,
+               image: DecorationImage(
+                fit: BoxFit.fitWidth,
                 image: AssetImage("assets/image/Bubbles.png"),
+                alignment: Alignment.topCenter,
               ),
               gradient: LinearGradient(
                 begin: const FractionalOffset(0.5, 0.3),
@@ -115,7 +114,6 @@ class Loginpage extends StatelessWidget {
             )
           )
         )
-      )
     );
   }
 }

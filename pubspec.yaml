@@ -51,6 +51,27 @@ flutter:
     - assets/image/Google_Icon.png
     - assets/image/Facebook_Icon.png
     - assets/image/Bubbles.png
+    - assets/image/Rectangle.png
+    - assets/image/Profile.png
+    - assets/image/HelloText.png
+    - assets/image/Book.png
+    - assets/image/Questioner.png
+    - assets/image/Consultation.png
+    - assets/image/Background.png
+    - assets/image/coba.png
+    - assets/image/QuestionareBorder.png
+    - assets/image/RadioButton.png
+    - assets/image/Ellipse.png
+    - assets/image/Filter.png
+    - assets/image/psikolok1.png
+    - assets/image/psikolok2.png
+    - assets/image/psikolok3.png
+    - assets/image/psikolok4.png
+    - assets/image/ProfilPsikolog.png
+    - assets/image/Gopay.png
+    - assets/image/calender.png
+    - assets/image/Book2.png
+    - assets/image/Pic.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
