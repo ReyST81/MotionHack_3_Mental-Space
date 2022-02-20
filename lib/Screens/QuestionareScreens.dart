@@ -28,26 +28,31 @@ class QuestionareScreens extends StatelessWidget {
                 ),
               ),
             ),
-              Container(
-                margin: EdgeInsets.only(top: 20, left: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    IconButton(
-                      onPressed: (){
-                        Route route = MaterialPageRoute(builder: (context) => HomePage());
-                        Navigator.push(context, route);
-                      },
-                      icon: Icon(Icons.arrow_back),
-                    )
-                  ],
-                ),
-              ),
+              
               Container(
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Container(
+                          margin: EdgeInsets.only(top: 20, left: 20),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              IconButton(
+                                onPressed: (){
+                                  Route route = MaterialPageRoute(builder: (context) => HomePage());
+                                  Navigator.push(context, route);
+                                },
+                                icon: Icon(Icons.arrow_back),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
                       Container(
+                        
                         margin: EdgeInsets.only(top: 110,left: 50),
                         width: 500,
                         child: Text("Mental Healt Questionare",
