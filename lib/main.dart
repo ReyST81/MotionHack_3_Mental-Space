@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mental_space/Page/LoginPage.dart';
+import 'Page/LoginPage.dart';
 void main() {
   runApp(MyApp());
 }

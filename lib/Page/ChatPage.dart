@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mental_space/Home/HomePage.dart';
+import 'package:mental_space/Screens/RatingScreen.dart';
 
 class Chatpage extends StatelessWidget {
   @override
@@ -31,7 +31,7 @@ class Chatpage extends StatelessWidget {
                       Navigator.pushAndRemoveUntil(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) => HomePage()),
+                              builder: (BuildContext context) => Ratingscreen()),
                           (route) => false);
                       print("object");
                     },
